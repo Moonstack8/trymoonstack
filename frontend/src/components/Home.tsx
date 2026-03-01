@@ -19,36 +19,27 @@ const galleryImages = [
 
 function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [bgLoaded, setBgLoaded] = useState(false)
   const [textVisible, setTextVisible] = useState(false)
-  const [imagesLoaded, setImagesLoaded] = useState(false)
+  const [galleryReady, setGalleryReady] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
+    const handleScroll = () => setIsScrolled(window.scrollY > 50)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   useEffect(() => {
-    // 1. Preload background
-    const bg = new Image()
-    bg.onload = bg.onerror = () => {
-      setBgLoaded(true)
-      // 2. Show text shortly after background fades in
-      setTimeout(() => setTextVisible(true), 400)
-    }
-    bg.src = landingPageImg
+    // Text fades in on mount
+    setTextVisible(true)
 
-    // 3. Preload gallery images in parallel
+    // Preload gallery images
     let loaded = 0
     const total = galleryImages.length
     galleryImages.forEach((src) => {
       const img = new Image()
       img.onload = img.onerror = () => {
         loaded++
-        if (loaded === total) setImagesLoaded(true)
+        if (loaded === total) setGalleryReady(true)
       }
       img.src = src
     })
@@ -75,24 +66,13 @@ function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="hero">
-        {/* Background fades in first */}
-        <div
-          style={{
-            position: 'absolute', inset: 0,
-            backgroundImage: `url(${landingPageImg})`,
-            backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',
-            opacity: bgLoaded ? 1 : 0,
-            transition: 'opacity 0.8s ease',
-            zIndex: 0,
-          }}
-        />
+      <section id="hero" className="hero" style={{ backgroundImage: `url(${landingPageImg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
         <div className="hero-background">
           <div className="gradient-orb orb-1"></div>
           <div className="gradient-orb orb-2"></div>
           <div className="gradient-orb orb-3"></div>
         </div>
-        {/* Text fades in after background */}
+        {/* Text fades in on mount */}
         <div className="hero-content" style={{ opacity: textVisible ? 1 : 0, transition: 'opacity 0.7s ease', animation: 'none' }}>
           <h1 className="hero-title">
             Create Visuals that Define <b><b>Your Brand</b></b>
@@ -108,10 +88,11 @@ function Home() {
       </section>
 
       {/* Gallery Marquee Section */}
+      {/* Step 3: gallery fades in once images are preloaded AND text is already visible */}
       <section
         className="gallery-marquee"
         style={{
-          opacity: imagesLoaded ? 1 : 0,
+          opacity: galleryReady ? 1 : 0,
           transition: 'opacity 0.8s ease',
         }}
       >

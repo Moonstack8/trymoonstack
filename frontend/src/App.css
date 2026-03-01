@@ -255,6 +255,7 @@
   justify-content: center;
   padding: 20vh 2rem 4rem;
   overflow: hidden;
+  background-color: #3e3e94;
 }
 
 .hero::after {
@@ -264,7 +265,7 @@
   left: 0;
   right: 0;
   height: 400px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.7) 70%, #ffffff 100%);
+  background: linear-gradient(to bottom, rgba(25, 25, 112, 0) 0%, rgba(25, 25, 112, 0.3) 40%, rgba(25, 25, 112, 0.7) 70%, #191970 100%);
   pointer-events: none;
   z-index: 2;
 }
