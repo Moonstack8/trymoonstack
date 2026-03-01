@@ -1,20 +1,18 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import moonstackLogo from '../assets/moonstack-all-white.png'
-import landingPageImg from '../assets/landing_page_img2.png'
 
-import betterFoodCo from '../assets/images/better_food_co.png'
-import bosCoffee from '../assets/images/bos_coffee.png'
-import echoLabAd from '../assets/images/echo-lab-ad1-2.png'
-import foxPointGrocers from '../assets/images/fox_point_grocers.png'
-import gotBaked from '../assets/images/got_baked.png'
-import loveshackfancy from '../assets/images/loveshackfancy.png'
-import MiNNY from '../assets/images/MiN_ny.png'
-import Ponto2 from '../assets/images/PONTO2.png'
+const moonstackLogo = '/moonstack-all-white.png'
+const landingPageImg = '/landing_page_img2.png'
 
 const galleryImages = [
-  betterFoodCo, bosCoffee, echoLabAd, foxPointGrocers, 
-  gotBaked, loveshackfancy, MiNNY, Ponto2
+  '/images/better_food_co.png',
+  '/images/bos_coffee.png',
+  '/images/echo-lab-ad1-2.png',
+  '/images/fox_point_grocers.png',
+  '/images/got_baked.png',
+  '/images/loveshackfancy.png',
+  '/images/MiN_ny.png',
+  '/images/PONTO2.png',
 ]
 
 function Home() {
