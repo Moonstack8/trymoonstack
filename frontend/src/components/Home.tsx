@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import moonstackLogo from '../assets/moonstack-all-white.png'
-import landingPageImg from '../assets/landing_page_img.png'
+import landingPageImg from '../assets/landing_page_img2.png'
 
 function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
