@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import moonstackLogo from '../assets/moonstack-logo.png'
+import moonstackLogo from '../assets/moonstack-all-white.png'
+import landingPageImg from '../assets/landing_page_img.png'
 
 function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -21,7 +22,7 @@ function Home() {
           <div className="logo">
             <Link to="/">
               <img src={moonstackLogo} alt="Moonstack" className="logo-icon" />
-              <span className="logo-text">Moonstack</span>
+              {/* <span className="logo-text">Moonstack</span> */}
             </Link>
           </div>
           <div className="nav-links">
@@ -35,7 +36,7 @@ function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="hero">
+      <section id="hero" className="hero" style={{ backgroundImage: `url(${landingPageImg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
         <div className="hero-background">
           <div className="gradient-orb orb-1"></div>
           <div className="gradient-orb orb-2"></div>
