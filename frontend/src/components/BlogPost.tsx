@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getPostBySlug, type BlogPost } from '../utils/blogParser';
-import moonstackLogo from '../assets/moonstack-logo.png';
+import moonstackLogo from '../assets/moonstack-all-white.png';
 import './BlogPost.css';
 
 function BlogPostComponent() {
