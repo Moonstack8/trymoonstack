@@ -43,9 +43,6 @@ function Home() {
           <div className="gradient-orb orb-3"></div>
         </div>
         <div className="hero-content">
-          <div className="hero-badge">
-            <span>✨ AI-Powered Video & Audio Generation</span>
-          </div>
           <h1 className="hero-title">
             Create Any Video By Chatting With
             <span className="gradient-text"> Moonstack</span>
