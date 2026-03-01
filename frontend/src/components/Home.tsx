@@ -44,15 +44,14 @@ function Home() {
         </div>
         <div className="hero-content">
           <h1 className="hero-title">
-            Create Any Video By Chatting With
-            <span className="gradient-text"> Moonstack</span>
+            Create Visuals that Define <b><b>Your Brand</b></b>
           </h1>
           <p className="hero-description">
-            Moonstack lets anyone of all backgrounds generate high-quality videos faster than ever before, powered by the best video tools
+            Moonstack crafts distinctive visual identities that make your brand impossible to ignore
           </p>
           <div className="hero-cta">
             <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary btn-large">Book a Call</a>
-            <a href="https://www.youtube.com/@tryecho" target="_blank" rel="noopener noreferrer" className="btn-secondary btn-large">Watch Demo</a>
+            <a href="https://www.youtube.com/@trymoonstack" target="_blank" rel="noopener noreferrer" className="btn-secondary btn-large">Watch Demo</a>
           </div>
           {/* <div className="hero-stats">
             <div className="stat">
@@ -76,8 +75,8 @@ function Home() {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2 className="section-title">Our Mission</h2>
-              <p className="about-description bolded-description"><strong>Everyone can be a filmmaker</strong></p>
+              <h2 className="section-title">Built for the AI era</h2>
+              {/* <p className="about-description bolded-description"><strong>Everyone can be a filmmaker</strong></p> */}
               <p className="about-description">
                 The best AI video models should be in the hands of everyone, not just those with technical expertise or big budgets. 
               </p> 
@@ -107,10 +106,10 @@ function Home() {
       <section id="features" className="features">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Powerful Features</h2>
-            <p className="section-description">
-              Creates your videos by integrating the best video tools
-            </p>
+            <h2 className="section-title">Everything your brand needs to stand out</h2>
+            {/* <p className="section-description">
+              Everything your brand needs to stand out.
+            </p> */}
           </div>
           <div className="features-grid">
             <div className="feature-card">
@@ -163,7 +162,7 @@ function Home() {
       <section className="cta">
         <div className="container">
           <div className="cta-content">
-            <h2 className="cta-title">Ready to Let Your Imagination Run Wild?</h2>
+            <h2 className="cta-title">Take your brand visuals to the moon</h2>
             <p className="cta-description">
               {/* Join thousands of creators using Moonstack to streamline their workflow */}
             </p>
@@ -182,7 +181,7 @@ function Home() {
                 <span className="logo-text">Moonstack</span>
               </div>
               <p className="footer-description">
-                Create videos in seconds by chatting with AI
+                Creating visuals that define brands, from startups finding their voice to enterprises redefining theirs.
               </p>
             </div>
             <div className="footer-section">
