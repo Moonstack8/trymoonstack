@@ -19,6 +19,8 @@ const galleryImages = [
 
 function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [bgLoaded, setBgLoaded] = useState(false)
+  const [textVisible, setTextVisible] = useState(false)
   const [imagesLoaded, setImagesLoaded] = useState(false)
 
   useEffect(() => {
@@ -30,6 +32,16 @@ function Home() {
   }, [])
 
   useEffect(() => {
+    // 1. Preload background
+    const bg = new Image()
+    bg.onload = bg.onerror = () => {
+      setBgLoaded(true)
+      // 2. Show text shortly after background fades in
+      setTimeout(() => setTextVisible(true), 400)
+    }
+    bg.src = landingPageImg
+
+    // 3. Preload gallery images in parallel
     let loaded = 0
     const total = galleryImages.length
     galleryImages.forEach((src) => {
@@ -63,13 +75,25 @@ function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="hero" style={{ backgroundImage: `url(${landingPageImg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+      <section id="hero" className="hero">
+        {/* Background fades in first */}
+        <div
+          style={{
+            position: 'absolute', inset: 0,
+            backgroundImage: `url(${landingPageImg})`,
+            backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',
+            opacity: bgLoaded ? 1 : 0,
+            transition: 'opacity 0.8s ease',
+            zIndex: 0,
+          }}
+        />
         <div className="hero-background">
           <div className="gradient-orb orb-1"></div>
           <div className="gradient-orb orb-2"></div>
           <div className="gradient-orb orb-3"></div>
         </div>
-        <div className="hero-content">
+        {/* Text fades in after background */}
+        <div className="hero-content" style={{ opacity: textVisible ? 1 : 0, transition: 'opacity 0.7s ease', animation: 'none' }}>
           <h1 className="hero-title">
             Create Visuals that Define <b><b>Your Brand</b></b>
           </h1>
