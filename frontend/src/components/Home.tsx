@@ -22,13 +22,12 @@ function Home() {
           <div className="logo">
             <Link to="/">
               <img src={moonstackLogo} alt="Moonstack" className="logo-icon" />
-              {/* <span className="logo-text">Moonstack</span> */}
             </Link>
           </div>
           <div className="nav-links">
             <a href="#about">About</a>
             <a href="#features">Features</a>
-            <Link to="/blog">Blog</Link>
+            {/* <Link to="/blog">Blog</Link> */}
             {/* <a href="#contact">Contact</a> */}
             <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary">Book a Call</a>
           </div>
@@ -53,20 +52,6 @@ function Home() {
             <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary btn-large">Book a Call</a>
             <a href="https://www.youtube.com/@trymoonstack" target="_blank" rel="noopener noreferrer" className="btn-secondary btn-large">Watch Demo</a>
           </div>
-          {/* <div className="hero-stats">
-            <div className="stat">
-              <div className="stat-value">99.9%</div>
-              <div className="stat-label">Accuracy</div>
-            </div>
-            <div className="stat">
-              <div className="stat-value">10x</div>
-              <div className="stat-label">Faster</div>
-            </div>
-            <div className="stat">
-              <div className="stat-value">24/7</div>
-              <div className="stat-label">Available</div>
-            </div>
-          </div> */}
         </div>
       </section>
 
@@ -76,27 +61,12 @@ function Home() {
           <div className="about-content">
             <div className="about-text">
               <h2 className="section-title">Built for the AI era</h2>
-              {/* <p className="about-description bolded-description"><strong>Everyone can be a filmmaker</strong></p> */}
               <p className="about-description">
                 The best AI video models should be in the hands of everyone, not just those with technical expertise or big budgets. 
               </p> 
               <p className="about-description">
                 At Moonstack, our mission is to democratize access to powerful video generation tools, enabling anyone to create high-quality videos with just a few words.
               </p>
-              {/* <div className="about-features">
-                <div className="about-feature">
-                  <span className="check-icon">✓</span>
-                  <span>No technical expertise required</span>
-                </div>
-                <div className="about-feature">
-                  <span className="check-icon">✓</span>
-                  <span>Enterprise-grade security</span>
-                </div>
-                <div className="about-feature">
-                  <span className="check-icon">✓</span>
-                  <span>Scalable infrastructure</span>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
@@ -107,9 +77,6 @@ function Home() {
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">Everything your brand needs to stand out</h2>
-            {/* <p className="section-description">
-              Everything your brand needs to stand out.
-            </p> */}
           </div>
           <div className="features-grid">
             <div className="feature-card">
@@ -164,7 +131,6 @@ function Home() {
           <div className="cta-content">
             <h2 className="cta-title">Take your brand visuals to the moon</h2>
             <p className="cta-description">
-              {/* Join thousands of creators using Moonstack to streamline their workflow */}
             </p>
             <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary btn-large">Book a Call</a>
           </div>
@@ -193,7 +159,6 @@ function Home() {
             <div className="footer-section">
               <h4 className="footer-title">Company</h4>
               <a href="#about">About</a>
-              <Link to="/blog">Blog</Link>
               <a href="#careers">Careers</a>
             </div>
             <div className="footer-section">
