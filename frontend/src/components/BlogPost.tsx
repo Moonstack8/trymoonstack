@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getPostBySlug, type BlogPost } from '../utils/blogParser';
-import echolabLogo from '../assets/echolab-logo.png';
+import moonstackLogo from '../assets/moonstack-logo.png';
 import './BlogPost.css';
 
 function BlogPostComponent() {
@@ -38,15 +38,15 @@ function BlogPostComponent() {
           <div className="nav-container">
             <div className="logo">
               <Link to="/">
-                <img src={echolabLogo} alt="EchoLab" className="logo-icon" />
-                <span className="logo-text">Echo Lab</span>
+                <img src={moonstackLogo} alt="Moonstack" className="logo-icon" />
+                <span className="logo-text">Moonstack</span>
               </Link>
             </div>
             <div className="nav-links">
               <a href="/#about">About</a>
               <a href="/#features">Features</a>
               <Link to="/blog">Blog</Link>
-              <a href="https://calendar.app.google/TBoLz96A9MSa8fhx6" target="_blank" rel="noopener noreferrer" className="btn-primary">Book a Call</a>
+              <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary">Book a Call</a>
             </div>
           </div>
         </nav>
@@ -66,15 +66,15 @@ function BlogPostComponent() {
           <div className="nav-container">
             <div className="logo">
               <Link to="/">
-                <img src={echolabLogo} alt="EchoLab" className="logo-icon" />
-                <span className="logo-text">Echo Lab</span>
+                <img src={moonstackLogo} alt="Moonstack" className="logo-icon" />
+                <span className="logo-text">Moonstack</span>
               </Link>
             </div>
             <div className="nav-links">
               <a href="/#about">About</a>
               <a href="/#features">Features</a>
               <Link to="/blog">Blog</Link>
-              <a href="https://calendar.app.google/TBoLz96A9MSa8fhx6" target="_blank" rel="noopener noreferrer" className="btn-primary">Book a Call</a>
+              <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary">Book a Call</a>
             </div>
           </div>
         </nav>
@@ -138,15 +138,15 @@ function BlogPostComponent() {
         <div className="nav-container">
           <div className="logo">
             <Link to="/">
-              <img src={echolabLogo} alt="EchoLab" className="logo-icon" />
-              <span className="logo-text">Echo Lab</span>
+              <img src={moonstackLogo} alt="Moonstack" className="logo-icon" />
+              <span className="logo-text">Moonstack</span>
             </Link>
           </div>
           <div className="nav-links">
             <a href="/#about">About</a>
             <a href="/#features">Features</a>
             <Link to="/blog">Blog</Link>
-            <a href="https://calendar.app.google/TBoLz96A9MSa8fhx6" target="_blank" rel="noopener noreferrer" className="btn-primary">Book a Call</a>
+            <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary">Book a Call</a>
           </div>
         </div>
       </nav>

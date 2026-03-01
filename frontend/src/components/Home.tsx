@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import echolabLogo from '../assets/echolab-logo.png'
+import moonstackLogo from '../assets/moonstack-logo.png'
 
 function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -20,8 +20,8 @@ function Home() {
         <div className="nav-container">
           <div className="logo">
             <Link to="/">
-              <img src={echolabLogo} alt="EchoLab" className="logo-icon" />
-              <span className="logo-text">Echo Lab</span>
+              <img src={moonstackLogo} alt="Moonstack" className="logo-icon" />
+              <span className="logo-text">Moonstack</span>
             </Link>
           </div>
           <div className="nav-links">
@@ -29,7 +29,7 @@ function Home() {
             <a href="#features">Features</a>
             <Link to="/blog">Blog</Link>
             {/* <a href="#contact">Contact</a> */}
-            <a href="https://calendar.app.google/TBoLz96A9MSa8fhx6" target="_blank" rel="noopener noreferrer" className="btn-primary">Book a Call</a>
+            <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary">Book a Call</a>
           </div>
         </div>
       </nav>
@@ -47,13 +47,13 @@ function Home() {
           </div>
           <h1 className="hero-title">
             Create Any Video By Chatting With
-            <span className="gradient-text"> Echo</span>
+            <span className="gradient-text"> Moonstack</span>
           </h1>
           <p className="hero-description">
-            Echo Lab lets anyone of all backgrounds generate high-quality videos faster than ever before, powered by the best video tools
+            Moonstack lets anyone of all backgrounds generate high-quality videos faster than ever before, powered by the best video tools
           </p>
           <div className="hero-cta">
-            <a href="https://calendar.app.google/TBoLz96A9MSa8fhx6" target="_blank" rel="noopener noreferrer" className="btn-primary btn-large">Book a Call</a>
+            <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary btn-large">Book a Call</a>
             <a href="https://www.youtube.com/@tryecho" target="_blank" rel="noopener noreferrer" className="btn-secondary btn-large">Watch Demo</a>
           </div>
           {/* <div className="hero-stats">
@@ -84,7 +84,7 @@ function Home() {
                 The best AI video models should be in the hands of everyone, not just those with technical expertise or big budgets. 
               </p> 
               <p className="about-description">
-                At Echo Lab, our mission is to democratize access to powerful video generation tools, enabling anyone to create high-quality videos with just a few words.
+                At Moonstack, our mission is to democratize access to powerful video generation tools, enabling anyone to create high-quality videos with just a few words.
               </p>
               {/* <div className="about-features">
                 <div className="about-feature">
@@ -167,9 +167,9 @@ function Home() {
           <div className="cta-content">
             <h2 className="cta-title">Ready to Let Your Imagination Run Wild?</h2>
             <p className="cta-description">
-              {/* Join thousands of creators using EchoLab to streamline their workflow */}
+              {/* Join thousands of creators using Moonstack to streamline their workflow */}
             </p>
-            <a href="https://calendar.app.google/TBoLz96A9MSa8fhx6" target="_blank" rel="noopener noreferrer" className="btn-primary btn-large">Book a Call</a>
+            <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary btn-large">Book a Call</a>
           </div>
         </div>
       </section>
@@ -180,8 +180,8 @@ function Home() {
           <div className="footer-content">
             <div className="footer-section">
               <div className="logo">
-                <img src={echolabLogo} alt="EchoLab" className="logo-icon" />
-                <span className="logo-text">EchoLab</span>
+                <img src={moonstackLogo} alt="Moonstack" className="logo-icon" />
+                <span className="logo-text">Moonstack</span>
               </div>
               <p className="footer-description">
                 Create videos in seconds by chatting with AI
@@ -207,7 +207,7 @@ function Home() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2025 EchoLab. All rights reserved.</p>
+            <p>&copy; 2025 Moonstack. All rights reserved.</p>
           </div>
         </div>
       </footer>
