@@ -331,8 +331,11 @@
   position: relative;
   z-index: 1;
   max-width: 900px;
+  width: 100%;
   text-align: center;
   animation: fadeInUp 1s ease-out;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
 }
 
 @keyframes fadeInUp {
@@ -371,7 +374,6 @@
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
   margin-bottom: 2.5rem;
-  white-space: nowrap;
 }
 
 .hero-cta {
