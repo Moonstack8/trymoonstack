@@ -200,9 +200,9 @@
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 8rem 2rem 4rem;
+  padding: 20vh 2rem 4rem;
   overflow: hidden;
 }
 
@@ -572,7 +572,7 @@
   }
 
   .hero {
-    padding: 6rem 1rem 3rem;
+    padding: 15vh 1rem 3rem;
   }
 
   .hero-cta {
