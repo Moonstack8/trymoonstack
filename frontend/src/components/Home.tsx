@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const moonstackLogo = '/moonstack-all-white.png'
-const landingPageImg = '/landing_page_img.png'
+const landingPageImg = '/landing_page_img.webp'
 
 const galleryImages = [
   '/images/better_food_co.png',
