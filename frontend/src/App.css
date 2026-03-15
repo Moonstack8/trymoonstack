@@ -190,8 +190,7 @@
 }
 
 .btn-secondary:hover {
-  border-color: #000000;
-  background: rgba(0, 0, 0, 0.05);
+  background: #f0f0f0;
   transform: translateY(-0.5px);
 }
 
