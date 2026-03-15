@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-const moonstackLogo = '/moonstack-all-white.png'
+const moonstackLogo = '/moonstack-all-white.webp'
 const landingPageImg = '/landing_page_img.webp'
 
 const galleryImages = [
-  '/images/better_food_co.png',
-  '/images/bos_coffee.png',
-  '/images/barnana.png',
-  '/images/fox_point_grocers.png',
-  '/images/got_baked.png',
-  '/images/loveshackfancy.png',
-  '/images/MiN_ny.png',
-  '/images/PONTO2.png',
+  '/images/better_food_co.webp',
+  '/images/bos_coffee.webp',
+  '/images/barnana.webp',
+  '/images/fox_point_grocers.webp',
+  '/images/got_baked.webp',
+  '/images/loveshackfancy.webp',
+  '/images/MiN_ny.webp',
+  '/images/PONTO2.webp',
 ]
 
 function Home() {
