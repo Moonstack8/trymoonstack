@@ -170,9 +170,9 @@
 }
 
 .btn-secondary {
-  background: transparent;
+  background: #ffffff;
   color: #000000;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid transparent;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-weight: 600;

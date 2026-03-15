@@ -105,10 +105,10 @@ function Home() {
             <div className="about-text">
               <h2 className="section-title">Built for the AI era</h2>
               <p className="about-description">
-                The best AI video models should be in the hands of everyone, not just those with technical expertise or big budgets.
+                Remove the guesswork in ad creation.
               </p>
               <p className="about-description">
-                At Moonstack, our mission is to democratize access to powerful video generation tools, enabling anyone to create high-quality videos with just a few words.
+                Moonstack is the AI-powered marketing agency that helps brands create visuals that reaches their audience and grows their business.
               </p>
             </div>
           </div>
