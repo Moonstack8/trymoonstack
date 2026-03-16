@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const moonstackLogo = '/moonstack-all-white.webp'
 const landingPageImg = '/landing_page_img.webp'
@@ -19,6 +19,34 @@ function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [textVisible, setTextVisible] = useState(false)
   const [loadedSrcs, setLoadedSrcs] = useState<Set<string>>(new Set())
+  const [websiteUrl, setWebsiteUrl] = useState('')
+  const navigate = useNavigate()
+
+  const handleSubmit = async () => {
+    const trimmed = websiteUrl.trim()
+    if (!trimmed) return
+
+    let submissionId: number | null = null
+    try {
+      const res = await fetch('http://localhost:8000/submissions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          url: trimmed,
+          company_name: 'Basemicrobe',
+          company_type: 'Biotech',
+          colors: ['Green', 'Gray', 'White'],
+          products: ['Psyllium Colon Cleanse', 'Fruit Fizz-C', 'Vegan Leather'],
+        }),
+      })
+      const data = await res.json()
+      submissionId = data.id
+    } catch {}
+
+    const params = new URLSearchParams({ url: trimmed })
+    if (submissionId) params.set('id', String(submissionId))
+    navigate(`/create?${params.toString()}`)
+  }
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50)
@@ -78,6 +106,12 @@ function Home() {
           <div className="hero-cta">
             <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary btn-large">Book a Call</a>
             <a href="https://www.youtube.com/@trymoonstack" target="_blank" rel="noopener noreferrer" className="btn-secondary btn-large">Watch Demo</a>
+          </div>
+          <div className="hero-input-row">
+            <div className="hero-input-pill">
+              <input type="text" className="hero-input" placeholder="Put your website link here" value={websiteUrl} onChange={e => setWebsiteUrl(e.target.value)} onKeyDown={e => e.key === 'Enter' && handleSubmit()} />
+              <button className="hero-input-submit" onClick={handleSubmit}>Submit</button>
+            </div>
           </div>
         </div>
       </section>
