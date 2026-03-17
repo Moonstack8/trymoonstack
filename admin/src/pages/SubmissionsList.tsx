@@ -17,7 +17,11 @@ function SubmissionsList() {
   const deleteSubmission = (e: React.MouseEvent, id: number) => {
     e.stopPropagation()
     fetch(`http://localhost:8000/submissions/${id}`, { method: 'DELETE' })
-      .then(() => setSubmissions(prev => prev.filter(s => s.id !== id)))
+      .then(() => {
+        localStorage.removeItem(`comp-${id}`)
+        localStorage.removeItem(`creative-${id}`)
+        setSubmissions(prev => prev.filter(s => s.id !== id))
+      })
       .catch(() => {})
   }
 
