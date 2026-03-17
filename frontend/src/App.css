@@ -216,13 +216,8 @@
 
 .marquee-track {
   display: flex;
-  gap: 1rem;
   width: max-content;
-  animation: marquee-scroll 25s linear infinite;
-}
-
-.marquee-track:hover {
-  animation-play-state: paused;
+  will-change: transform;
 }
 
 .marquee-item {
@@ -231,6 +226,7 @@
   height: 320px;
   border-radius: 8px;
   overflow: hidden;
+  margin-right: 1rem;
 }
 
 .marquee-item img {
@@ -240,10 +236,6 @@
   display: block;
 }
 
-@keyframes marquee-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
 
 /* Hero Section */
 .hero {
