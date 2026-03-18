@@ -113,7 +113,7 @@ function Home() {
             Create Visuals that Define <b><b>Your Brand</b></b>
           </h1>
           <p className="hero-description">
-            Moonstack crafts distinctive visual identities that make your brand impossible to ignore
+            Moonstack crafts designer-quality ads that make your brand impossible to ignore
           </p>
           <div className="hero-cta">
             <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary btn-large">Book a Call</a>
