@@ -195,6 +195,43 @@
   transform: translateY(-0.5px);
 }
 
+.btn-tertiary {
+  background: #6c47ff;
+  color: #ffffff;
+  border: 2px solid #6c47ff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.btn-tertiary:hover {
+  background: #5535e0;
+  border-color: #5535e0;
+  transform: translateY(-0.5px);
+}
+
+.btn-tertiary.btn-large {
+  padding: 10px 20px !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  min-width: 150px;
+  height: 44px !important;
+  line-height: 1 !important;
+  border-width: 2px !important;
+  box-sizing: border-box !important;
+}
+
 /* Gallery Marquee Section */
 .gallery-marquee {
   overflow: hidden;
