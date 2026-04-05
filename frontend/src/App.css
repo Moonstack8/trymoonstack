@@ -170,9 +170,9 @@
 }
 
 .btn-secondary {
-  background: transparent;
+  background: #ffffff;
   color: #000000;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid transparent;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-weight: 600;
@@ -190,8 +190,7 @@
 }
 
 .btn-secondary:hover {
-  border-color: #000000;
-  background: rgba(0, 0, 0, 0.05);
+  background: #f0f0f0;
   transform: translateY(-0.5px);
 }
 
@@ -254,13 +253,8 @@
 
 .marquee-track {
   display: flex;
-  gap: 1rem;
   width: max-content;
-  animation: marquee-scroll 25s linear infinite;
-}
-
-.marquee-track:hover {
-  animation-play-state: paused;
+  will-change: transform;
 }
 
 .marquee-item {
@@ -269,6 +263,7 @@
   height: 320px;
   border-radius: 8px;
   overflow: hidden;
+  margin-right: 1rem;
 }
 
 .marquee-item img {
@@ -278,10 +273,6 @@
   display: block;
 }
 
-@keyframes marquee-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
 
 /* Hero Section */
 .hero {
