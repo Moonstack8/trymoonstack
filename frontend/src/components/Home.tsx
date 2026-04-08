@@ -159,58 +159,28 @@ function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
-      {/* <section id="features" className="features">
+      <hr style={{ border: 'none', borderTop: '1px solid rgba(0,0,0,0.1)', margin: '0 2rem' }} />
+
+      {/* Watch Demo Section */}
+      <section id="features" className="about">
         <div className="container">
-          <div className="section-header">
-            <h2 className="section-title">Everything your brand needs to stand out</h2>
-          </div>
-          <div className="features-grid">
-            <div className="feature-card">
-              <div className="feature-icon">🎬</div>
-              <h3 className="feature-title">Video Processing</h3>
-              <p className="feature-description">
-                Automatically processes, stitches, and enhances video scenes with AI-powered tools
-              </p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">🎙️</div>
-              <h3 className="feature-title">Audio Transcription</h3>
-              <p className="feature-description">
-                Transcribes the video with industry-leading accuracy and multiple language support
-              </p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">📝</div>
-              <h3 className="feature-title">Smart Captions</h3>
-              <p className="feature-description">
-                Generates professional, time-synced captions that enhance accessibility and engagement
-              </p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">🔊</div>
-              <h3 className="feature-title">Voice Synthesis</h3>
-              <p className="feature-description">
-                Creates natural-sounding voiceovers and dubbing in multiple voices and languages
-              </p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">🎨</div>
-              <h3 className="feature-title">Scene Stitching</h3>
-              <p className="feature-description">
-                Seamlessly combines multiple video scenes with intelligent transitions
-              </p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">⚡</div>
-              <h3 className="feature-title">Lightning Fast</h3>
-              <p className="feature-description">
-                Processes large files in minutes, not hours, with our optimized AI pipeline
-              </p>
+          <div className="about-content">
+            <div className="about-text" style={{ textAlign: 'center', alignItems: 'center' }}>
+              <h2 className="section-title">See it in action</h2>
+              <p className="about-description">Watch how Moonstack creates ads that convert.</p>
+              <a
+                href="https://www.instagram.com/trymoonstack/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary btn-large"
+                style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginTop: '1.5rem' }}
+              >
+                Watch Demo
+              </a>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* CTA Section */}
       <section className="cta">
