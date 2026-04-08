@@ -186,7 +186,7 @@ function Home() {
       <section className="cta">
         <div className="container">
           <div className="cta-content">
-            <h2 className="cta-title">Take your brand visuals to the moon</h2>
+            <h2 className="cta-title">Take your business to the moon</h2>
             <p className="cta-description">
             </p>
             <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary btn-large">Book a Call</a>
@@ -204,7 +204,7 @@ function Home() {
                 <span className="logo-text">Moonstack</span>
               </div>
               <p className="footer-description">
-                Creating visuals that define brands, from startups finding their voice to enterprises redefining theirs.
+                Creating ads that convert, from startups finding their audience to enterprises expanding theirs.
               </p>
             </div>
             <div className="footer-section">
