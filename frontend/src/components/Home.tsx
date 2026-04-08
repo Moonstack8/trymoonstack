@@ -117,7 +117,7 @@ function Home() {
           </p>
           <div className="hero-cta">
             <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary btn-large">Book a Call</a>
-            <a href="https://www.youtube.com/@trymoonstack" target="_blank" rel="noopener noreferrer" className="btn-secondary btn-large">Watch Demo</a>
+            <Link to="/waitlist" className="btn-secondary btn-large">Join Waitlist</Link>
           </div>
         </div>
       </section>
