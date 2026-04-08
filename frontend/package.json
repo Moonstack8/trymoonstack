@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
     "@vercel/analytics": "^2.0.1",
+    "@vercel/node": "^5.7.1",
     "@vercel/speed-insights": "^2.0.0",
     "buffer": "^6.0.3",
     "gray-matter": "^4.0.3",

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 const moonstackLogo = '/moonstack-all-white.webp'
@@ -6,6 +6,9 @@ const landingPageImg = '/landing_page_img.webp'
 
 function Waitlist() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [email, setEmail] = useState('')
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const emailRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50)
@@ -43,13 +46,31 @@ function Waitlist() {
             Be the first to know when Moonstack launches. Enter your email below.
           </p>
           <form
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={async (e) => {
+              e.preventDefault()
+              setStatus('loading')
+              try {
+                const res = await fetch('/api/waitlist', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ email }),
+                })
+                if (!res.ok) throw new Error()
+                setStatus('success')
+                setEmail('')
+              } catch {
+                setStatus('error')
+              }
+            }}
             style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '12px', marginTop: '32px' }}
           >
             <input
+              ref={emailRef}
               type="email"
               placeholder="Enter your email"
               className="waitlist-input"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
               style={{
                 padding: '12px 20px',
@@ -62,10 +83,20 @@ function Waitlist() {
                 outline: 'none',
               }}
             />
-            <button type="submit" className="btn-primary btn-large">
-              Join Waitlist
+            <button type="submit" className="btn-primary btn-large" disabled={status === 'loading'}>
+              {status === 'loading' ? 'Joining...' : 'Join Waitlist'}
             </button>
           </form>
+          {status === 'success' && (
+            <p style={{ marginTop: '16px', color: 'rgba(255,255,255,0.85)', fontSize: '1rem' }}>
+              You're on the list! We'll be in touch.
+            </p>
+          )}
+          {status === 'error' && (
+            <p style={{ marginTop: '16px', color: '#ff8080', fontSize: '1rem' }}>
+              Something went wrong. Please try again.
+            </p>
+          )}
         </div>
       </section>
     </div>
