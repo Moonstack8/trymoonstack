@@ -65,6 +65,7 @@ button:focus-visible {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 /* Custom scrollbar */

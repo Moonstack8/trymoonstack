@@ -118,7 +118,6 @@ function Home() {
           <div className="hero-cta">
             <a href="https://calendar.app.google/WdqnkAnLUJQvMKcY6" target="_blank" rel="noopener noreferrer" className="btn-primary btn-large">Book a Call</a>
             <a href="https://www.youtube.com/@trymoonstack" target="_blank" rel="noopener noreferrer" className="btn-secondary btn-large">Watch Demo</a>
-            <a href="https://forms.gle/jnesCSU2gFY3XRqv8" target="_blank" rel="noopener noreferrer" className="btn-tertiary btn-large">Join Waitlist</a>
           </div>
         </div>
       </section>

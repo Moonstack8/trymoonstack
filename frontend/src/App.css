@@ -1,3 +1,7 @@
+.waitlist-input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
 /* App Container */
 .app {
   min-height: 100vh;
