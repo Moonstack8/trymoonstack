@@ -87,16 +87,18 @@ function Waitlist() {
               {status === 'loading' ? 'Joining...' : 'Join Waitlist'}
             </button>
           </form>
-          {status === 'success' && (
-            <p style={{ marginTop: '16px', color: 'rgba(255,255,255,0.85)', fontSize: '1rem' }}>
-              You're on the list! We'll be in touch.
-            </p>
-          )}
-          {status === 'error' && (
-            <p style={{ marginTop: '16px', color: '#ff8080', fontSize: '1rem' }}>
-              Something went wrong. Please try again.
-            </p>
-          )}
+          <div style={{ position: 'relative', height: '2rem' }}>
+            {status === 'success' && (
+              <p style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', whiteSpace: 'nowrap', marginTop: '8px', color: 'rgba(255,255,255,0.85)', fontSize: '1rem' }}>
+                You're on the list! We'll be in touch.
+              </p>
+            )}
+            {status === 'error' && (
+              <p style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', whiteSpace: 'nowrap', marginTop: '8px', color: '#ff8080', fontSize: '1rem' }}>
+                Something went wrong. Please try again.
+              </p>
+            )}
+          </div>
         </div>
       </section>
     </div>
